@@ -6,12 +6,30 @@
     app:flexDirection="row"
     app:justifyContent="space_between"
     app:alignItems="flex_start"
+    app:flexWrap="wrap"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.cursoandroid.a03_flexbox.MainActivity">
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_minWidth="320dp"
+        android:hint="Campo 1"
+        app:layout_flexGrow="1"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_minWidth="320dp"
+        android:hint="Campo 2"
+        app:layout_flexGrow="1"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_minWidth="320dp"
+        android:hint="Campo 2"
+        app:layout_flexGrow="1"/>
 
 </com.google.android.flexbox.FlexboxLayout>
